@@ -23,9 +23,6 @@ services:
     ports:
       - "8081:8081"
   node:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: psnehi/docker-testapp:v1
     container_name: node
     restart: always
