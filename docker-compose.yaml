@@ -22,14 +22,14 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: qwerty
     ports:
       - "8081:8081"
-  node:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      tags:
-        - psnehi/docker-test:latest
-    image: psnehi/docker-test:latest
-    container_name: node
-    restart: always
-    ports:
-      - "5050:5050"
+  # node:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     tags:
+  #       - psnehi/docker-test:latest
+  #   image: psnehi/docker-test:latest
+  #   container_name: node
+  #   restart: always
+  #   ports:
+  #     - "5050:5050"
